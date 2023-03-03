@@ -7,6 +7,7 @@ html {
     scroll-behavior: smooth;
     --text-color: #5f5b53;
     --heading-color: #171100;
+    --font-heading: Sen, sans-serif;
 }
 
 body {
@@ -35,7 +36,11 @@ a {
     text-align: center;
     color: #ffffff;
     background: var(--heading-color);
-    border-radius: 24.5px;
+    border-radius: 999px;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
 /* Header */
 .header {
@@ -44,6 +49,7 @@ a {
 .header.fixed {
     position: sticky;
     top: -28px;
+    z-index: 1;
 }
 .header .body {
     display: flex;
@@ -96,4 +102,168 @@ a {
 }
 .header .action .btn {
     min-width: 144px;
+}
+
+/* hero */
+
+.hero {
+    padding-top: 56px;
+    padding-bottom: 65px;
+    background: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .img-block {
+    width: 48%;
+    position: relative;
+}
+
+.hero .img-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero .img-block .sumary {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 24px 60px 24px 24px;
+}
+
+.hero .sumary .item {
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+}
+
+.hero .sumary .item + .item {
+    margin-top: 22px;
+}
+.sumary .item .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sumary .item .ui {
+    background: #fff9e8;
+}
+.sumary .item .dev {
+    background: #fcefff;
+}
+.sumary .item .mar {
+    background: #ebeaff;
+}
+
+.sumary .i .sumary .label {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.88;
+    /* identical to box height, or 186% */
+
+    color: var(--text-color);
+}
+.sumary .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    /* identical to box height, or 167% */
+
+    color: var(--heading-color);
+}
+
+.hero .content-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.hero .content-block .heading {
+    width: 100%;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    /* or 117% */
+
+    letter-spacing: -0.02em;
+
+    color: var(--heading-color);
+}
+
+.hero .content-block .desc {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    /* or 167% */
+
+    color: var(--text-color);
+}
+
+.hero .content-block .cta-group {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+    margin-bottom: 48px;
+    gap: 0 28px;
+}
+
+.hero .content-block .cta-btn {
+    min-width: 180px;
+    height: 64px;
+    background: #ffb900;
+    line-height: 64px;
+}
+
+.hero .watch-video {
+    display: flex;
+    align-items: center;
+    gap: 0 14px;
+    border: none;
+    background-color: #fffcf4;
+}
+
+.hero .watch-video .icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    /* identical to box height, or 167% */
+
+    color: var(--heading-color);
+}
+.hero .content-block .qty {
+    display: flex;
+    gap: 0 28px;
+}
+.hero .content-block .qty strong {
+    font-family: "Sen";
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    /* identical to box height, or 123% */
+
+    color: var(--heading-color);
 }
